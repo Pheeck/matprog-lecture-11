@@ -32,7 +32,7 @@
 \maketitle
 
 \noindent
-\emph{version 1 -- \today}
+\emph{version 2 -- \today}
 
 \section{Non-negative rank (propositions from the tutorial)}
 
@@ -80,11 +80,10 @@
 Say we have a problem of size $n$. We search for a polyhedron representing the
 problem and its description using linear equalities and inequalities. We might
 end up with exponentially many inequalities \footnote{I'd like to stress that
-we only count the number of inequalities. The equalities don't bother us. I was
-confused by that. Not sure why inequalities are so much of a bigger deal. I
-guess that you can first solve the equality part of the polyhedron by
-polynomial linear algebra methods and then deal with the inequalities?}. We
-might search for other descriptions of the polyhedron in $\R^d$ with
+we only count the number of inequalities. The equalities don't bother us since
+we can use linear algebra tools to efficiently solve for the affine space they
+represent and move into that space. Then we are only left with inequalities.}
+We might search for other descriptions of the polyhedron in $\R^d$ with
 polynomially many inequalities. If that doesn't work out, another approach is
 to search for polyhedrons of higher dimension whose projection to $\R^d$ is
 equivalent to the original polyhedron.
